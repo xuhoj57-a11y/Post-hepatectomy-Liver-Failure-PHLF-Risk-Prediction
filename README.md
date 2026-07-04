@@ -1,20 +1,7 @@
 # PHLF Predictor English Package
 
-Download the three files into the same folder:
-- `phlf_predictor.html`
-- `model_rf_integrated.json`
-- `README.md`
+Download the files and double-click `phlf_predictor.html` to run the tool.
 
-Run the tool through a local HTTP server:
+The model data is embedded in the HTML file, so the page can run directly from the local filesystem without a server. The separate `model_rf_integrated.json` file is kept as a model-data backup.
 
-```bash
-python -m http.server 8765
-```
-
-Then open:
-
-```text
-http://127.0.0.1:8765/phlf_predictor.html
-```
-
-The prediction runs locally in the browser and does not upload patient data. Opening the HTML file directly by double-clicking may be blocked by some browsers because the page reads the local JSON model file.
+The prediction runs locally in the browser and does not upload patient data.
